@@ -1,0 +1,23 @@
+/*SVGアニメーション専用CSS*/
+#wrap_all path {
+      fill: #fafac8; /*塗りつぶし色*/
+      stroke: #e17b34;/*枠線（アウトライン）色*/
+      stroke-width: 1px;/*枠線（アウトライン）太さ*/
+      animation: svg 5s ease-in both infinite;/*5秒間繰り返し*/
+      }
+      @keyframes svg {
+        0% {
+        fill: transparent;
+        stroke-dasharray: 2000px;/*枠線（アウトライン）の間隔*/
+        stroke-dashoffset: 2000px;/*枠線（アウトライン）の開始位置*/
+       }
+        50%{
+        stroke-dashoffset: 0;/*枠線（アウトライン）の開始位置*/
+        }
+        30%{
+        fill: transparent;
+        }
+        20%{
+        fill: #ffffff;/*塗りつぶし色*/
+        }
+      }

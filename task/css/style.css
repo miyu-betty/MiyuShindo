@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*すべてのWebページに適用される*/
+html{
+  font-family: sans-serif;
+}
+html *{
+  box-sizing: border-box;
+}
+body{
+  margin 0 0 0 0;
+  background-color: #ffffff;
+}
+.wrapper{
+  margin: 0 auto 0 auto;
+  max-width: 960px;
+}
+/*ヘッダー情報*/
+/*エリア選択リンク*/
+li{
+  display: inline;
+  list-style-type: none;
+  padding: 10px 10px;
+}
+ul{
+  margin: auto;
+  padding: 10px 0px 10px 20px;
+  background-color: #fff4e6;
+}
+/*カフェ選択リンク*/
+.nav li{
+  display: block;
+  list-style-type: none;
+  padding: 8px 10px;
+}
+.nav ul{
+  margin: 10px 300px 10px 20px ;
+  padding: 10px;
+  background-color :#fff4e6;
+}
+/*選択リンク(共通）*/
+a:link{
+  color: #331c14;
+  text-decoration: none;
+}
+a:visited{
+  color: #331c44;
+  text-decoration: none;
+}
+a:hover{
+  color: #46b937;
+  text-decoration: none;
+}
+a:active{
+  color: #46b937;
+  text-decoration: none;
+}
+/*メイン情報*/
+/*フォント*/
+h3,h4{
+  color: #24140e;
+  margin: 20px 0px;
+  padding: 0px 10px;
+  border-left: 5px solid #e17b34;
+}
+h3{
+  font-size: 30px;
+}
+p{
+  line-height: 2;
+  margin: 0 20px;
+}
+/*写真のスタイル*/
+img{
+  max-width: 100%;
+  height: auto;
+}
+.photo{
+  float: center;
+  margin: 10px 300px 10px 10px;
+  padding: 10px 100px 10px 10px;
+}
+/*表のスタイル*/
+.info{
+  border-collapse: collapse;
+  margin: 10px 20px;
+}
+.info td{
+  padding: 10px 30px 10px 10px;
+  border: 1px solid #b1b1b3;
+  text-align: left;
+}
+.info th{
+  background-color: #efefef;
+  padding: 10px;
+  border: 1px solid #b1b1b3;
+  color: #666666;
+  vertical-align: middle;
+}
+/*▲TOP（ページ最上部へ移動ボタン）*/
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
+.pagetop a {
+    display: block;
+    background-color: #ccc;
+    text-align: center;
+    color: #222;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+	  filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.pagetop a:hover {
+    display: block;
+    background-color: #ffb24d;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+	  filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+/*フッター*/
+/*図のスタイル*/
+.footer{
+  background-image: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 60px 15px 30px 15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/*スマートフォン向けCSS*/
+@media (max-width: 767px){
+  /*全体　‐ナビゲーション‐*/
+ .wrapper{
+    margin: 0 8px;
+ }
+ .header{
+   width: auto;
+ }
+ li{
+   display: block;
+ }
+ ul{
+   margin: auto;
+ }
+ .nav ul{
+   margin: auto;
+ }
+}
